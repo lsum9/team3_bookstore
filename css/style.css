@@ -49,18 +49,19 @@ body {
 }
 
 .title {
-  margin-top: 80px;
-  margin-bottom: 100px;
+  margin-top: 150px;
+  margin-bottom: 120px;
   text-align: center;
 }
 
 .title_01 {
+  font-weight: 700;
   font-size: 36pt;
   margin-bottom: 20px;
 }
 
-.title_02 {
-  font-size: 24pt;
+.bs_w {
+  width: 250px;
 }
 
 .title_03 {
@@ -68,6 +69,7 @@ body {
   text-align: center;
   font-size: 12pt;
   font-weight: 800;
+  line-height: 120%;
 }
 
 .title_des {
@@ -84,6 +86,7 @@ body {
   color: #A2A685;
   font-size: 10pt;
   font-weight: 200;
+  text-align: center;
 }
 
 .margin01 {
@@ -99,7 +102,7 @@ body {
   justify-content: space-between;
   gap: 10px;
   padding: 18px;
-  border-radius: 5px;
+  border-radius: 15px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -108,9 +111,16 @@ body {
 }
 
 .btn01 {
-  background: #117CD9;
+  background-color: #F2F2F2;
+  color: #0460D9;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn01:hover {
+  background-color: #0460D9;
   color: #F2F2F2;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -119,8 +129,27 @@ body {
   width: 300px;
 }
 
+.bs_book {
+  width: 250px;
+  height: 250px;
+}
+
+.bs_book_back {
+  background-color: #F2F2F2;
+  border-radius: 15px;
+}
+
+.inner_shadow {
+  box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
 .thumb_book {
-  width: 200px;
+  border-radius: 10px;
+  width: 120px;
+}
+
+.shadow {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .slide-container {
@@ -138,6 +167,7 @@ body {
 
 .slide-box img {
   width: 100%;
+  border-radius: 15px;
 }
 
 .content_body_center {
@@ -151,5 +181,5 @@ body {
   padding: 0 200px;
   display: flex;
   justify-content: center;
-  gap: 80px;
+  gap: 60px;
 }/*# sourceMappingURL=style.css.map */

@@ -50,22 +50,28 @@ body {
     width: 50%;
 }
 .title {
-    margin-top: 80px;
-    margin-bottom: 100px;
+    margin-top: 150px;
+    margin-bottom: 120px;
     text-align: center;
 }
 .title_01 {
+    font-weight: 700;
     font-size: 36pt;
     margin-bottom: 20px;
 }
-.title_02 {
-    font-size: 24pt;
+// .title_02 {
+//     font-weight: 800;
+//     font-size: 24pt;
+// }
+.bs_w {
+    width: 250px;
 }
 .title_03 {
     margin-top: 10px;
     text-align: center;
     font-size: 12pt;
     font-weight: 800;
+    line-height: 120%;
 }
 .title_des {
     font-size: 10pt;
@@ -79,6 +85,7 @@ body {
     color: $color2;
     font-size: 10pt;
     font-weight: 200;
+    text-align: center;
 }
 .margin01 {
     margin-top: 10px;
@@ -92,24 +99,45 @@ body {
     justify-content: space-between;
     gap: 10px;
     padding: 18px;
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 .search_bar input {
     border: none;
 }
 .btn01 {
-    background: $color4;
+    background-color: $color1;
+    color: $color5;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn01:hover {
+    background-color: $color5;
     color: $color1;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
 }
 .content_book {
     position: relative;
     width: 300px;
 }
+.bs_book {
+    width: 250px;
+    height: 250px;
+}
+.bs_book_back {
+    background-color: $color1;
+    border-radius: 15px;
+}
+.inner_shadow {
+    box-shadow: inset 5px 5px 20px rgba($color: #000000, $alpha: 0.2);
+}
 .thumb_book {
-    width: 200px;
+    border-radius: 10px;
+    width: 120px;
+}
+.shadow {
+    box-shadow: 5px 5px 20px rgba($color: #000000, $alpha: 0.2);
 }
 // 책 캐러셀
 .slide-container {
@@ -125,6 +153,7 @@ body {
 }
 .slide-box img {
     width: 100%;
+    border-radius: 15px;
 } 
 // 책 캐러셀 끝
 // 책 리스트
@@ -138,5 +167,5 @@ body {
     padding: 0 200px;
     display: flex;
     justify-content: center;
-    gap: 80px;
+    gap: 60px;
 }
