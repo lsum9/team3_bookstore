@@ -12,8 +12,10 @@ body {
 }
 // 헤더 + 책 광고
 .bs_background {
-    width: 100%;
+    width: calc(100% - 400px);
     background-color: $color1;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 // 헤더
 .content_header {
@@ -36,17 +38,20 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+.content{
+    height: 100vh;
+}
 // 책 광고
 .content_show {
-    width: calc(100% - 400px);
-    height: 680px;
-    padding: 100px 200px;
+    width: 100%;
+    height: 880px;
 }
 .content_text {
     width: 50%;
 }
 .title {
-    margin-top: 50px;
+    margin-top: 80px;
+    margin-bottom: 100px;
     text-align: center;
 }
 .title_01 {
@@ -56,8 +61,24 @@ body {
 .title_02 {
     font-size: 24pt;
 }
+.title_03 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12pt;
+    font-weight: 800;
+}
+.title_des {
+    font-size: 10pt;
+    font-weight: 400;
+}
 .line_h {
+    margin-top: 10px;
     line-height: 150%;
+}
+.author_01 {
+    color: $color2;
+    font-size: 10pt;
+    font-weight: 200;
 }
 .margin01 {
     margin-top: 10px;
@@ -87,6 +108,9 @@ body {
     position: relative;
     width: 300px;
 }
+.thumb_book {
+    width: 200px;
+}
 // 책 캐러셀
 .slide-container {
     width: 900px;
@@ -113,11 +137,6 @@ body {
     width: calc(100% - 400px);
     padding: 0 200px;
     display: flex;
-    justify-content: space-between;
-    gap: 40px;
-}
-.bs_book {
-    width: 300px;
-    height: 300px;
-    background-color: $color1;
+    justify-content: center;
+    gap: 80px;
 }
