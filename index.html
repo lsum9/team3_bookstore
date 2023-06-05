@@ -9,20 +9,21 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     <link rel="stylesheet" href="https://use.typekit.net/cwn0ytd.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
-    <div class="content_body_top">
+    <div class="bs_background">
         <div class="content_header">
             <div class="logo">
                 <a href="#"><i class="fi fi-sr-book-alt"></i></a>
             </div>
             <div class="menu">
-                <ul>
+                <ul class="flex_g20">
                     <li><a href="#"><span>Home</span></a></li>
                     <li><a href="#"><span>Product</span></a></li>
                 </ul>
             </div>
-            <div class="mymenu">
+            <div class="flex_g20">
                 <div class="mycart">
                     <a href="#"><i class="fi fi-rr-shopping-cart"></i></a>
                 </div>
@@ -31,14 +32,13 @@
                 </div>
             </div>
         </div>
-        <div class="content_show">
+        <div class="content_show flex_j">
             <div class="content_text">
-                <h1>
-                    <span class="title_01">Hello, Welcome</span>
+                <h1 class="title_01">
+                    <span>Hello, Welcome</span>
                 </h1>
-                <br>
                 <p>
-                    <span class="cont_01">
+                    <span class="line_h">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         <br>
                         Etiam feugiat leo sagittis, scelerisque sapien in, bibendum ligula. 
@@ -55,22 +55,30 @@
                     </span>
                 </p>
                 <div class="search_bar">
-                    <input type="text" size="27">
+                    <input type="text" size="57">
                     <input class="btn01" type="submit" value="Search">
                 </div>
             </div>
             <div class="content_book">
-                <div class="book_wrapper">
-                    <div class="book_001">
-                        <img class="book_show" src="https://image.aladin.co.kr/product/30929/51/cover500/s302832892_1.jpg" alt="book_001">
+                <div style="overflow: hidden">
+                    <div class="slide-container">
+                      <div class="slide-box">
+                        <img src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791168473690.jpg">
+                      </div>
+                      <div class="slide-box">
+                        <img src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788901272580.jpg">
+                      </div>
+                      <div class="slide-box">
+                        <img src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791188331888.jpg">
+                      </div>
                     </div>
-                    <div class="book_002">
-                        <img class="book_show" src="https://image.aladin.co.kr/product/31559/97/cover500/k682832859_1.jpg" alt="book_002">
-                    </div>
-                    <div class="book_003">
-                        <img class="book_show" src="https://image.aladin.co.kr/product/31730/9/cover500/890127258x_2.jpg" alt="book_003">
-                    </div>
-                </div>
+                 </div> 
+                 <div class="flex margin01">
+                    <button class="slide-1">1</button>
+                    <button class="slide-2">2</button>
+                    <button class="slide-3">3</button>
+                </div> 
+                <!-- 임시로 추가해둔 버튼입니다. 이후에 삭제 예정 -->
             </div>
         </div>
     </div>
@@ -88,4 +96,5 @@
         </div>
     </div>
 </body>
+<script src="js/script.js"></script>
 </html>
