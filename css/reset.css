@@ -45,3 +45,7 @@ table {
 a {
 	color: black;
 }
+/* input 포커스 하이라이트 삭제 */
+input:focus {
+	outline: none; 
+}
