@@ -4,10 +4,16 @@ $color2 : #A2A685;
 $color3 : #274001;
 $color4 : #117CD9;
 $color5 : #0460D9;
-// 전체 폰트 지정
+
+// 전체 폰트 지정 변수
+$cont_font : "pretendard", sans-serif;
+$font_b : 800;
+$font_m : 400;
+$font_l : 200;
+////////////////////////////////////////////
 body {
-    font-family: "pretendard", sans-serif;
-    font-weight: 400;
+    font-family: $cont_font;
+    font-weight: $font_m;
     font-style: normal;
 }
 // 헤더 + 책 광고
@@ -17,12 +23,11 @@ body {
     padding-left: 200px;
     padding-right: 200px;
 }
-// 헤더
-.content_header {
-    width: calc(100% - 40px);
+// 플렉스 클래스
+.flex_j {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    align-items: center;
 }
 .flex {
     display: flex;
@@ -33,18 +38,18 @@ body {
     display: flex;
     gap: 20px;
 }
-.flex_j {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+// 헤더
+.content_header {
+    width: calc(100% - 40px);
+    padding: 20px;
 }
-.content{
+.content {
+    width: 100%;
     height: 100vh;
 }
 // 책 광고
-.content_show {
-    width: 100%;
-    height: 880px;
+.fb_show {
+    height: calc(100vh - 6.5vh);
 }
 .content_text {
     width: 50%;
@@ -52,43 +57,41 @@ body {
 .title {
     margin-top: 150px;
     margin-bottom: 120px;
-    text-align: center;
 }
-.title_01 {
-    font-weight: 700;
-    font-size: 36pt;
+.g_01 {
     margin-bottom: 20px;
+} // 타이틀 하단 갭
+.m_01 {
+    margin-top: 10px;
 }
-// .title_02 {
-//     font-weight: 800;
-//     font-size: 24pt;
-// }
+.t_01 {
+    font-size: 36pt;
+    font-weight: $font_b;
+} // 타이틀 1번
 .bs_w {
     width: 250px;
 }
-.title_03 {
-    margin-top: 10px;
+.text_center {
     text-align: center;
-    font-size: 12pt;
-    font-weight: 800;
-    line-height: 120%;
 }
+.t_03 {
+    margin-top: 10px;
+    font-size: 12pt;
+    line-height: 120%;
+    font-weight: $font_b;
+} // 타이틀 3번
 .title_des {
     font-size: 10pt;
     font-weight: 400;
 }
 .line_h {
-    margin-top: 10px;
-    line-height: 150%;
+    line-height: 170%;
 }
 .author_01 {
     color: $color2;
     font-size: 10pt;
     font-weight: 200;
     text-align: center;
-}
-.margin01 {
-    margin-top: 10px;
 }
 .search_bar {
     width: 500px;
@@ -132,12 +135,12 @@ body {
 .inner_shadow {
     box-shadow: inset 5px 5px 20px rgba($color: #000000, $alpha: 0.2);
 }
+.shadow {
+    box-shadow: 5px 5px 20px rgba($color: #000000, $alpha: 0.2);
+}
 .thumb_book {
     border-radius: 10px;
     width: 120px;
-}
-.shadow {
-    box-shadow: 5px 5px 20px rgba($color: #000000, $alpha: 0.2);
 }
 // 책 캐러셀
 .slide-container {
@@ -157,7 +160,7 @@ body {
 } 
 // 책 캐러셀 끝
 // 책 리스트
-.content_body_center {
+.content_body {
     width: 100%;
     height: 1000px;
 }
